@@ -115,6 +115,7 @@ app.post('/telegram-webhook', async (req, res) => {
 });
 
 // ==== تنظیم وب هوک در تلگرام ====
+/*
 async function setWebhook() {
   try {
     const projectName = process.env.PROJECT_NAME || 'your-project-name';
@@ -131,6 +132,7 @@ async function setWebhook() {
     console.error('❌ خطا در تنظیم وب هوک:', err.message);
   }
 }
+*/
 
 // ==== روت تستی ====
 app.get('/', (req, res) => {
@@ -143,6 +145,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 سرور در حال اجرا است.`);
 });
-
 // جدا از app.listen
-setWebhook();
+// setWebhook();
